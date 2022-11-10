@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('SCM CheckOUt') {
+            steps {
+              echo 'getting from github'
+                echo 'CheckOUt'
+            }
+        }
+          stage('Build') {
+            steps {
+                echo 'Buildc '
+            }
+        }
+           stage('depoly') {
+            steps {
+                echo 'depoly c '
+            }
+        }
+    }
+}
